@@ -11,6 +11,7 @@ const Navbar = () => {
 
   return (
     <div className="h-[80px] flex justify-between items-center xl:px-[120px] lg:px-[80px] md:px-[60px] px-[32px]">
+      
       {show === false ? (
         <Link href="/">
         <Image
@@ -77,6 +78,7 @@ const Navbar = () => {
           }}
         >
           <Image
+            className="fixed top-7 left-7 z-50"
             src="/cross.png"
             alt="close navigation"
             width={30}
@@ -85,7 +87,7 @@ const Navbar = () => {
         </button>
       )}
       {show === true ? (
-        <div className="absolute z-50 duration-300 md:hidden w-[80%] py-10 h-[100%] top-0 right-0 bg-lightBlue">
+        <div className="fixed z-50  duration-300 md:hidden w-[80%] py-10 h-[100%] top-0 right-0 bg-lightBlue">
           
           <Image
             alt="premier associate logo"

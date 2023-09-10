@@ -66,7 +66,7 @@ const Slider = () => {
           >
             <div className="w-full z-20 h-full bg-black/70 flex absolute"></div>
             <div className="md:w-[500px] w-[350px] md:h-[500px] h-[350px] absolute flex rounded-full bg-lightBlue z-10 mt-[60px] ml-[45px] blur-[150px]"></div>
-            <div className="z-30 absolute md:block flex-col flex mt-[164px] xl:ml-[112px] md:ml-[90px] justify-center w-full items-center">
+            <div className="z-30 absolute md:block flex-col flex mt-[164px] xl:ml-[121px] lg:ml-[85px] md:ml-[65px] justify-center w-full items-center">
               <p className="text-white mb-[50px] lg:text-[24px] md:text-[20px] text-[16px] font-secularOne xl:w-[445px] md:w-[400px] w-[320px] md:text-left text-center">
                 {item.title}
               </p>
