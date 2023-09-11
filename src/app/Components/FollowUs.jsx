@@ -34,7 +34,7 @@ const FollowUs = () => {
       <div className='flex justify-center items-center gap-[32px]'>
       {
             data.map((item, index) => (
-                <Link  key={index} href=''><Image src={item.icon} alt={item.alt} width={50} height={50} /></Link>
+                <Link key={index} href=''><Image src={item.icon} alt={item.alt} width={50} height={50} /></Link>
             ))
         }
       </div>

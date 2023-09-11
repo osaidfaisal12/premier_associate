@@ -26,7 +26,7 @@ const WhyHire = () => {
             <div className='md:flex hidden absolute z-10 justify-center lg:bottom-[-32px] xl:right-8 lg:right-0 right-8 items-center xl:w-[172px] lg:w-[120px] w-[172px] xl:h-[172px] lg:h-[120px] h-[172px]'>
             <Image priority className='rounded-bl-[30px] rounded-tr-[30px]' src='/boy1.jpg' layout='fill' objectFit='cover' alt='staff pic one' />
             </div>
-            <div className='flex justify-center items-center xl:w-[340px] lg:w-[280px] md:w-[340px] w-[300px] absolute xl:h-[340px] lg:h-[280px] md:h-[340px] h-[300px]'>
+            <div className='flex justify-center items-center xl:w-[340px] lg:w-[280px] md:w-[340px] w-[100%] absolute xl:h-[340px] lg:h-[280px] md:h-[340px] h-[300px]'>
             <Image priority className='rounded-tl-[30px] rounded-br-[30px]' src='/boy2.jpg' layout='fill' objectFit='cover' alt='staff pic one' />
             </div>
             

@@ -10,7 +10,7 @@ const Navbar = () => {
   const [showServices, setShowServices] = React.useState(false);
 
   return (
-    <div className="h-[80px] flex justify-between items-center xl:px-[120px] lg:px-[80px] md:px-[60px] px-[32px]">
+    <div className="h-[80px] fixed w-full bg-white/95 z-50 flex justify-between items-center xl:px-[120px] lg:px-[80px] md:px-[60px] px-[32px]">
       
       {show === false ? (
         <Link href="/">
@@ -19,6 +19,7 @@ const Navbar = () => {
           width={160}
           height={100}
           src="/web.png"
+          priority
         /></Link>
       ) : null}
       <ul className="md:flex self-stretch hidden justify-center items-center xl:gap-[46px] lg:gap-[40px] md:gap-[20px] font-poppins text-[16px]">
@@ -51,7 +52,7 @@ const Navbar = () => {
           )}
         </li>
         <li className="hover:text-lightBlue duration-300">
-          <Link href="/">About</Link>
+          <Link href="/about">About</Link>
         </li>
         <li>
           <Link className="bg-lightBlue transition-bg hover:bg-darkBlue duration-300 ease-in text-white px-[12px] py-[6px]" href="/">
@@ -95,6 +96,7 @@ const Navbar = () => {
             height={100}
             className="ml-10"
             src="/webwh.png"
+            priority
           />
           <ul className="md:hidden flex flex-col pt-10 items-start font-poppins text-white text-[16px]">
             <li className="px-10 py-[12px] hover:bg-white duration-300 transition-bg ease-linear hover:text-lightBlue self-stretch">
@@ -118,7 +120,7 @@ const Navbar = () => {
               </ul>
             </li>
             <li className="px-10 py-[12px] hover:bg-white duration-300 transition-bg ease-linear hover:text-lightBlue self-stretch">
-              <Link href="/">About</Link>
+              <Link href="/about">About</Link>
             </li>
             <li className="px-10 py-[12px] hover:bg-white duration-300 transition-bg ease-linear hover:text-lightBlue self-stretch">
               <Link href="/">Contact Us</Link>

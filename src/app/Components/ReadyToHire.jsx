@@ -32,13 +32,13 @@ const ReadyToHire = () => {
 
       <div className="flex w-full flex-col justify-center items-center md:gap-[160px] gap-[20px]">
         {data.map((item, index) => (
-          <div className="flex w-full">
-            <div className="relative w-full flex md:flex-row flex-col" key={index}>
-            <div
-  className="relative xl:w-[831px] lg:w-[640px] md:w-[540px] xl:h-[465px] lg:h-[400px] md:h-[340px] md:ml-auto md:top-0 md:right-0"
-//   style={{ backgroundImage: `url(${item.img})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
->                
-<Image src={item.img} alt={item.title} fill objectFit="cover"/>
+          <div key={index} className="flex w-full">
+            <div className="relative w-full flex md:flex-row flex-col">
+              <div
+                className="relative xl:w-[831px] lg:w-[640px] md:w-[540px] xl:h-[465px] lg:h-[400px] md:h-[340px] md:ml-auto md:top-0 md:right-0"
+                //   style={{ backgroundImage: `url(${item.img})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+              >
+                <Image src={item.img} alt={item.title} fill objectFit="cover" />
               </div>
               <div className="md:absolute flex flex-col md:gap-[18px] gap-[12px] lg:p-[44px] md:p-[24px] p-[16px] md:bottom-[-100px] md:left-0 bg-[#ECECEC] max-w-[710px] lg:w-[710px] md:w-[510px]">
                 <h3 className="text-[24px] font-secularOne">{item.title}</h3>
@@ -48,7 +48,12 @@ const ReadyToHire = () => {
           </div>
         ))}
       </div>
-      <Link href="/" className="transition-bg bg-lightBlue hover:bg-darkBlue text-white px-[28px] rounded-sm py-[9px] md:mt-[160px] mt-[20px] duration-300 font-secularOne lg:text-[24px]">Contact Us</Link>
+      <Link
+        href="/"
+        className="transition-bg bg-lightBlue hover:bg-darkBlue text-white px-[28px] rounded-sm py-[9px] md:mt-[160px] mt-[20px] duration-300 font-secularOne lg:text-[24px]"
+      >
+        Contact Us
+      </Link>
     </div>
   );
 };

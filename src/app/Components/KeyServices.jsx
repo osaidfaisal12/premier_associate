@@ -44,7 +44,7 @@ const KeyServices = () => {
                 width={35}
                 height={35}
               />
-              <h3 className="text-[24px] font-secularOne">{item.title}</h3>
+              <h3 className="text-[24px] select-none font-secularOne">{item.title}</h3>
             </div>
             {/* </div> */}
             <div className="px-[32px] mb-[24px]">
