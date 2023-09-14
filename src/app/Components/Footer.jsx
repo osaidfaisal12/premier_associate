@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import { IoIosArrowForward } from 'react-icons/io'
 
@@ -22,13 +23,14 @@ const Footer = () => {
 
         <ul className='flex-col font-poppins md:flex hidden'>
             <li className='text-white flex mb-4'>Navigate to :</li>
-            <li className='text-white hover:text-lightBlue duration-200 flex items-center gap-[8px] cursor-pointer'><IoIosArrowForward />Home</li>
-            <li className='text-white hover:text-lightBlue duration-200 flex items-center gap-[8px] cursor-pointer'><IoIosArrowForward />Services</li>
-            <li className='text-white hover:text-lightBlue duration-200 flex items-center gap-[8px] cursor-pointer ml-8'><IoIosArrowForward />Virtual Assistant</li>
-            <li className='text-white hover:text-lightBlue duration-200 flex items-center gap-[8px] cursor-pointer ml-8'><IoIosArrowForward />Key Accounts Management</li>
-            <li className='text-white hover:text-lightBlue duration-200 flex items-center gap-[8px] cursor-pointer ml-8'><IoIosArrowForward />Managing CRM Applications</li>
-            <li className='text-white hover:text-lightBlue duration-200 flex items-center gap-[8px] cursor-pointer'><IoIosArrowForward />About</li>
-            <li className='text-white hover:text-lightBlue duration-200 flex items-center gap-[8px] cursor-pointer'><IoIosArrowForward />Contact Us</li>        </ul>
+            <li className='text-white hover:text-lightBlue duration-200 cursor-pointer'><Link href='/' className='flex items-center gap-[8px]'><IoIosArrowForward />Home</Link></li>
+            <li className='text-white hover:text-lightBlue duration-200 flex items-center gap-[8px] cursor-pointer'><Link href='/services/virtual-assistant' className='flex items-center gap-[8px]'><IoIosArrowForward />Services</Link></li>
+            <li className='text-white hover:text-lightBlue duration-200 flex items-center gap-[8px] cursor-pointer ml-8'><Link href='/services/virtual-assistant' className='flex items-center gap-[8px]'><IoIosArrowForward />Virtual Assistant</Link></li>
+            <li className='text-white hover:text-lightBlue duration-200 flex items-center gap-[8px] cursor-pointer ml-8'><Link href='/services/key-accounts-management' className='flex items-center gap-[8px]'><IoIosArrowForward />Key Accounts Management</Link></li>
+            <li className='text-white hover:text-lightBlue duration-200 flex items-center gap-[8px] cursor-pointer ml-8'><Link href='/services/managing-crm-applications' className='flex items-center gap-[8px]'><IoIosArrowForward />Managing CRM Applications</Link></li>
+            <li className='text-white hover:text-lightBlue duration-200 flex items-center gap-[8px] cursor-pointer'><Link href='/about' className='flex items-center gap-[8px]'><IoIosArrowForward />About</Link></li>
+            <li className='text-white hover:text-lightBlue duration-200 flex items-center gap-[8px] cursor-pointer'><Link href='/contact-us' className='flex items-center gap-[8px]'><IoIosArrowForward />Contact Us</Link></li>        
+            </ul>
       </div>
     </div>
   )

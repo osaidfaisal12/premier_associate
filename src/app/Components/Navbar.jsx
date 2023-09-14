@@ -10,7 +10,7 @@ const Navbar = () => {
   const [showServices, setShowServices] = React.useState(false);
 
   return (
-    <div className="h-[80px] fixed w-full bg-white/95 z-50 flex justify-between items-center xl:px-[120px] lg:px-[80px] md:px-[60px] px-[32px]">
+    <div className="h-[80px] font-poppins fixed w-full bg-white/95 z-50 flex justify-between items-center xl:px-[120px] lg:px-[80px] md:px-[60px] px-[32px]">
       
       {show === false ? (
         <Link href="/">
@@ -22,14 +22,14 @@ const Navbar = () => {
           priority
         /></Link>
       ) : null}
-      <ul className="md:flex self-stretch hidden justify-center items-center xl:gap-[46px] lg:gap-[40px] md:gap-[20px] font-poppins text-[16px]">
-        <li className="hover:text-lightBlue duration-300">
+      <ul className="md:flex self-stretch hidden justify-center items-center xl:gap-[40px] lg:gap-[32px] md:gap-[20px] font-poppins text-[16px]">
+        <li className="hover:text-lightBlue duration-300 p-2">
           <Link href="/">Home</Link>
         </li>
         <li onMouseEnter={() => setShowServices(true)}
             onMouseLeave={() => setShowServices(false)} className=" flex self-stretch justify-center items-center gap-2">
         <button
-          className="gap-1 flex justify-center items-center"
+          className="gap-1 p-2 flex justify-center items-center"
           >
             Services
             <IoIosArrowDown className="inline" />
@@ -39,23 +39,23 @@ const Navbar = () => {
             <ul className="absolute mt-2 top-[72px] bg-white xl:right-[370px] lg:right-[320px] right-[260px] flex flex-col border-[1px] border-black">
               {/* Add your service items here */}
               <li className="hover:bg-lightBlue  transition-bg duration-300 ease-in-out hover:text-white pl-4 pr-12 py-4">
-                <Link className="" href="/service1">Virtual Assistant</Link>
+                <Link className="" href="/services/virtual-assistant">Virtual Assistant</Link>
               </li>
               <li className="hover:bg-lightBlue  transition-bg duration-300 ease-in-out hover:text-white pl-4 pr-12 py-4">
-                <Link href="/service2">Key Accounts Management</Link>
+                <Link href="/services/key-accounts-management">Key Accounts Management</Link>
               </li>
               <li className="hover:bg-lightBlue  transition-bg duration-300 ease-in-out hover:text-white pl-4 pr-12 py-4">
-                <Link href="/service2">Managing CRM Applications</Link>
+                <Link href="/services/managing-crm-applications">Managing CRM Applications</Link>
               </li>
               {/* Add more service items as needed */}
             </ul>
           )}
         </li>
-        <li className="hover:text-lightBlue duration-300">
+        <li className="hover:text-lightBlue p-2 flex duration-300">
           <Link href="/about">About</Link>
         </li>
         <li>
-          <Link className="bg-lightBlue transition-bg hover:bg-darkBlue duration-300 ease-in text-white px-[12px] py-[6px]" href="/">
+          <Link className="bg-lightBlue transition-bg hover:bg-darkBlue duration-200 ease-in text-white px-[12px] py-[6px]" href="/contact-us">
             Contact Us
           </Link>
         </li>
@@ -105,17 +105,23 @@ const Navbar = () => {
             <li className="self-stretch">
               <Link className="px-10 flex py-[12px] hover:bg-white duration-300 transition-bg ease-linear hover:text-lightBlue self-stretch" href="/">Services</Link>
               <ul className="">
-              <li className="px-16 py-[12px] hover:bg-white duration-300 transition-bg ease-linear hover:text-lightBlue self-stretch">
+                <li className="px-16 py-[12px] hover:bg-white duration-300 transition-bg ease-linear hover:text-lightBlue self-stretch">
+              <Link href="/services/virtual-assistant">
                   <IoIosArrowForward className="inline" />
                   Virtual Assistant
+                </Link>
                 </li>
                 <li className="px-16 py-[12px] hover:bg-white duration-300 transition-bg ease-linear hover:text-lightBlue self-stretch">
+                <Link href='/services/key-accounts-management'>                  
                   <IoIosArrowForward className="inline" />
                   Key Accounts Management
+                </Link>
                 </li>
                 <li className="px-16 py-[12px] hover:bg-white duration-300 transition-bg ease-linear hover:text-lightBlue self-stretch">
+                <Link href='/services/managing-crm-applications'>
                   <IoIosArrowForward className="inline" />
                   Managing CRM Applications
+                </Link>
                 </li>
               </ul>
             </li>
@@ -123,7 +129,7 @@ const Navbar = () => {
               <Link href="/about">About</Link>
             </li>
             <li className="px-10 py-[12px] hover:bg-white duration-300 transition-bg ease-linear hover:text-lightBlue self-stretch">
-              <Link href="/">Contact Us</Link>
+              <Link href="/contact-us">Contact Us</Link>
             </li>
           </ul>
         </div>

@@ -6,20 +6,20 @@ const data = [
     {
         icon: "/facebook.png",
         alt: "facebook",
-        linkTo: "/",
+        linkTo: "https://www.facebook.com/premierassociates2014",
     },
     {
         icon: "/twitter.png",
         alt: "twitter",
-        linkTo: "/",
+        linkTo: "https://twitter.com/PremierAssocia",
     },{
-        icon: "/instagram.png",
-        alt: "instagram",
-        linkTo: "/",
+        icon: "/youtube.png",
+        alt: "youtube",
+        linkTo: "https://www.youtube.com/@PremierAssociates",
     },{
         icon: "/linkedin.png",
         alt: "linkedin",
-        linkTo: "/",
+        linkTo: "https://www.linkedin.com/company/premierassociates22/",
     }
 ]
 
@@ -34,7 +34,7 @@ const FollowUs = () => {
       <div className='flex justify-center items-center gap-[32px]'>
       {
             data.map((item, index) => (
-                <Link key={index} href=''><Image src={item.icon} alt={item.alt} width={50} height={50} /></Link>
+                <Link key={index} target='_blank' href={item.linkTo}><Image src={item.icon} alt={item.alt} width={50} height={50} /></Link>
             ))
         }
       </div>

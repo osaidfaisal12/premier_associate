@@ -10,7 +10,7 @@ import Footer from '../Components/Footer'
 import Powered from '../Components/Powered'
 
 export const metadata = {
-    title: 'Premier Associates | About Us | Business Consulting and Services',
+    title: 'About Us | Business Consulting and Services | Premier Associates',
     description: 'About Premier Associates | Business Consulting and Services',
 }
   
@@ -19,11 +19,11 @@ const page = () => {
   return (
     <div className='flex flex-col'>
         <Navbar />
-        <AboutBanner />
-        <Quote />
+        <AboutBanner title='About Premier Associates' img='s2' />
+        <Quote quote='Unleash Your Potential with Our Business Consultancy & Virtual Assistant Services' />
         <AboutContent />
         <OurMission />
-        <Contact title='Contact Us' />
+        <Contact title='Contact Us' bgcolor='white' />
         <FollowUs />
         <Footer />
         <Powered />
