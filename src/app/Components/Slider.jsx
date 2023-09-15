@@ -56,7 +56,7 @@ const Slider = () => {
             disableOnInteraction: true,
           }}
         navigation={true}
-        modules={[Pagination, Navigation]}
+        modules={[Pagination, Navigation, Autoplay]}
         className="mySwiper w-full h-full flex absolute"
       >
         {data.map((item, index) => (
@@ -72,7 +72,7 @@ const Slider = () => {
               </p>
               <Link
                 className="bg-lightBlue md:text-[24px] font-secularOne mx-auto transition-bg hover:bg-transparent hover:border-[4px] hover:border-lightBlue hover:text-lightBlue duration-300 ease-in text-white md:px-[32px] md:py-[12px] px-[14px] py-[7px]"
-                href="/"
+                href="/contact-us"
               >
                 Contact Us
               </Link>

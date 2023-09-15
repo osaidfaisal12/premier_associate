@@ -6,14 +6,17 @@ const data = [
   {
     icon: "/customer-support.png",
     title: "Virtual Assistant",
+    LinkTo: "/services/virtual-assistant",
   },
   {
     icon: "/account.png",
     title: "Key Accounts Management",
+    LinkTo: "/services/key-accounts-management",
   },
   {
     icon: "/crm.png",
     title: "Managing CRM Applications",
+    LinkTo: "/services/managing-crm-applications",
   }
 ]
 
@@ -35,7 +38,7 @@ const KeyServices = () => {
             layout="fill"
             alt="Key services"
           />
-          <div className="flex justify-between border-t-[16px] border-lightBlue hover:border-[16px]  flex-col w-[216px] h-[280px] z-10 m-auto relative bg-white hover:w-full hover:h-full transition-all duration-300">
+          <div className="flex justify-between border-t-[16px] border-lightBlue hover:border-[16px]  flex-col xl:w-[250px] w-[216px] h-[280px] z-10 m-auto relative bg-white hover:w-full hover:h-full transition-all duration-300">
             <div className="flex flex-col px-[32px]">
               <Image
                 className="mt-[32px] mb-[16px]"
@@ -50,7 +53,7 @@ const KeyServices = () => {
             <div className="px-[32px] mb-[24px]">
               <hr className="border-[1px] border-black mb-[12px]" />
               <Link
-                href="/"
+                href={item.LinkTo}
                 className="hover:text-lightBlue duration-300 font-poppins text-[14px] underline"
               >
                 Learn more

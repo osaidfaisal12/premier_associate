@@ -49,7 +49,7 @@ const ReadyToHire = () => {
         ))}
       </div>
       <Link
-        href="/"
+        href="/contact-us"
         className="transition-bg bg-lightBlue hover:bg-darkBlue text-white px-[28px] rounded-sm py-[9px] md:mt-[160px] mt-[20px] duration-300 font-secularOne lg:text-[24px]"
       >
         Contact Us

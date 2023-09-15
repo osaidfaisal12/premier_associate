@@ -8,19 +8,19 @@ const ContactInfo = ({title, bgcolor}) => {
       <h3 className="font-secularOne text-[24px]">{title}</h3>
 
       <div className="flex lg:flex-row flex-col xl:gap-[52px] md:gap-[40px] gap-[20px]">
-        <Image src="/boy1.jpg" style={{objectFit:"contain"}} alt="contact us pic" width={400} height={400} />
+        {/* <Image src="/boy1.jpg" style={{objectFit:"contain"}} alt="contact us pic" width={400} height={400} /> */}
         <div className="flex flex-col md:gap-[28px] gap-[16px]">
           <p className="md:text-[20px] text-[18px] font-secularOne">Syed Muddassir Jawed</p>
           <div className="flex flex-col lg:gap-[14px] gap-[16px]">
             <div className="md:text-[16px] text-[14px] font-poppins flex flex-col md:gap-[14px] gap-[16px]">
               <p>Joint Masters in Marketing & Management - Middlesex University London - United Kingdom</p>
               <p>B.S in Computer Engineering- Sir Syed University of Engineering & Technology, Karachi - Pakistan</p>
-              <p>Partner Premier Associates</p>
-              <p>Email: muddassir@premierassociates.co</p>
+              <p>Premier Associates</p>
+              <p><span className="font-secularOne">Email:</span> muddassir@premierassociates.co</p>
             </div>
             <div className="md:text-[16px] text-[14px] font-poppins flex flex-col md:gap-[14px] gap-[16px]">
-              <p>Cell: +92-333-026-0091</p>
-              <p>WhatsApp: +92-333-026-0091</p>
+              <p><span className="font-secularOne">Cell:</span> +92-333-026-0091</p>
+              <p><span className="font-secularOne">WhatsApp:</span> +92-333-026-0091</p>
             </div>
           </div>
         </div>

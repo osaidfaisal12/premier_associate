@@ -8,15 +8,15 @@ const Contact = ({title, bgcolor}) => {
       <h3 className="font-secularOne text-[24px]">{title}</h3>
 
       <div className="flex md:flex-row flex-col xl:gap-[52px] md:gap-[40px] gap-[20px]">
-        <Image src="/boy1.jpg" style={{objectFit:"cover"}} alt="contact us pic" width={132} height={132} />
+        {/* <Image src="/boy1.jpg" style={{objectFit:"cover"}} alt="contact us pic" width={132} height={132} /> */}
         <div className="flex flex-col md:gap-[28px] gap-[16px]">
           <p className="md:text-[20px] text-[18px] font-secularOne">Syed Muddassir Jawed</p>
-          <div className="flex lg:flex-row flex-col xl:gap-[83px] lg:gap-[50px] gap-[16px]">
-            <div className="md:text-[16px] text-[14px] font-poppins flex flex-col md:gap-[7px] gap-[16px]">
-              <p>Partner Premier Associates</p>
+          <div className="flex flex-col gap-[16px]">
+            <div className="md:text-[16px] text-[14px] font-poppins flex flex-col  gap-[16px]">
+              <p>Premier Associates</p>
               <p>Email: muddassir@premierassociates.co</p>
             </div>
-            <div className="md:text-[16px] text-[14px] font-poppins flex flex-col md:gap-[7px] gap-[16px]">
+            <div className="md:text-[16px] text-[14px] font-poppins flex flex-col gap-[16px]">
               <p>Cell: +92-333-026-0091</p>
               <p>WhatsApp: +92-333-026-0091</p>
             </div>

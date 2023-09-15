@@ -7,6 +7,7 @@ import HeroBanner from '../Components/ContactUs/heroBanner'
 import Image from 'next/image'
 import MyForm from '../Components/ContactUs/MyForm'
 import ContactInfo from '../Components/ContactUs/ContactInfo'
+import Head from 'next/head'
 
 export const metadata = {
     title: 'Contact Us | Premier Associates',
@@ -16,6 +17,20 @@ export const metadata = {
 const page = () => {
   return (
     <div className='flex flex-col'>
+          <Head>
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_GOOGLE_PUBLIC_ID}`}
+        ></script>
+        <script>
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.NEXT_GOOGLE_PUBLIC_ID}');
+          `}
+        </script>
+      </Head>
     <Navbar />
     <HeroBanner />
     <div className='flex w-full items-center justify-center'>
@@ -24,7 +39,6 @@ const page = () => {
         <div className='flex flex-col'>
             <h3 className='text-[32px] font-secularOne'>Schedule a Call with our Premier Associate Virtual Assistant</h3>
             <p className='font-poppins text-[16px] leading-[200%]'>Premier Associates is dedicated to empowering businesses to operate at their fullest potential. With our expert team and comprehensive operations, we offer cost-effective resources that deliver substantial value to business owners. Count on our extensive industry knowledge, business solutions proficiency, and exceptional output to provide top-tier virtual assistance.</p>
-            <p className='font-secularOne text-[16px] my-[13px]'>Book a FREE 30-minute Consult Call to learn more.</p>
             <p className='font-poppins mt-[5px] text-[16px]'>*Use this form if you are looking for a VA.</p>
         </div>
         <MyForm />
