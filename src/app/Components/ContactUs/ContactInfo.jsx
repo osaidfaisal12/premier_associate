@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const ContactInfo = ({title, bgcolor}) => {
@@ -19,8 +20,9 @@ const ContactInfo = ({title, bgcolor}) => {
               <p><span className="font-secularOne">Email:</span> muddassir@premierassociates.co</p>
             </div>
             <div className="md:text-[16px] text-[14px] font-poppins flex flex-col md:gap-[14px] gap-[16px]">
-              <p><span className="font-secularOne">Cell:</span> +92-333-026-0091</p>
-              <p><span className="font-secularOne">WhatsApp:</span> +92-333-026-0091</p>
+              {/* <p><span className="font-secularOne">Cell:</span> +92-333-026-0091</p>
+              <p><span className="font-secularOne">WhatsApp:</span> +92-333-026-0091</p> */}
+              <Link href='https://api.whatsapp.com/send?phone=923330260091' target="_blank"><Image priority src='/whatsapp.png' alt='Whatsapp icon' width={50} height={50} /></Link>
             </div>
           </div>
         </div>

@@ -82,7 +82,9 @@ const Slider = () => {
               src={item.img}
               alt="slider"
               layout="fill"
-              objectFit="cover"
+              style={{
+                objectFit: "cover",
+              }}
             />
           </SwiperSlide>
         ))}

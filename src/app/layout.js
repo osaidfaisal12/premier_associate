@@ -2,6 +2,7 @@ import Head from 'next/head'
 import './globals.css'
 import { Inter, Secular_One, Poppins } from 'next/font/google'
 import Link from 'next/link'
+import GoogleAnalytics from './GoogleAnalytics'
 
 const inter = Inter({ subsets: ['latin'] })
 const secularOne = Secular_One({  weight: ['400'], subsets: ['latin'], variable: "--Secular-one" })
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
       <Head>
         <Link rel="icon" href="/favicon.png" sizes="any" />
       </Head>
+      <GoogleAnalytics />
       <body className={`${secularOne.variable} ${poppins.variable}`}>{children}</body>
     </html>
   )

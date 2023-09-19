@@ -7,7 +7,6 @@ import HeroBanner from '../Components/ContactUs/heroBanner'
 import Image from 'next/image'
 import MyForm from '../Components/ContactUs/MyForm'
 import ContactInfo from '../Components/ContactUs/ContactInfo'
-import Head from 'next/head'
 
 export const metadata = {
     title: 'Contact Us | Premier Associates',
@@ -17,20 +16,6 @@ export const metadata = {
 const page = () => {
   return (
     <div className='flex flex-col'>
-          <Head>
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_GOOGLE_PUBLIC_ID}`}
-        ></script>
-        <script>
-          {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${process.env.NEXT_GOOGLE_PUBLIC_ID}');
-          `}
-        </script>
-      </Head>
     <Navbar />
     <HeroBanner />
     <div className='flex w-full items-center justify-center'>
