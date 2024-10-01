@@ -29,8 +29,8 @@ const KeyServices = () => {
       <div className="flex flex-wrap lg:justify-between justify-center items-center xl:gap-[88px] gap-[40px]">
         
         {
-          data.map((item, index) => (
-            <div key={index} className="xl:w-[340px] w-[256px] xl:h-[360px] h-[320px] relative flex justify-between items-center">
+          data.map((item) => (
+            <div key={item.title} className="xl:w-[340px] w-[256px] xl:h-[360px] h-[320px] relative flex justify-between items-center">
           <Image
             className="relative"
             src="/keyser.jpg"
