@@ -6,8 +6,8 @@ const SubHead = ({currentService}) => {
 return (
     <div className='flex py-[56px] flex-wrap md:gap-[33px] gap-[16px] justify-center max-w-[960px]'>
         {
-            currentService.subHead.map((item, index) => (
-                <div key={index} className='md:p-[18px] hover:bg-darkBlue duration-300 p-[12px] md:h-[400px] h-[300px] bg-lightBlue self-center text-white flex flex-col'>
+            currentService.subHead.map((item) => (
+                <div key={item.title} className='md:p-[18px] hover:bg-darkBlue duration-300 p-[12px] md:h-[400px] h-[300px] bg-lightBlue self-center text-white flex flex-col'>
                     <div className='relative w-[260px] h-[260px]'>
                     <Image src={item.img} priority alt='hi' style={{objectFit: 'cover'}} fill/>
                     </div>
