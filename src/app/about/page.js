@@ -19,7 +19,7 @@ const page = () => {
     <div className="flex flex-col">
       <Navbar />
       <AboutBanner title="About Premier Associates" img="s2" />
-      <Quote quote="Unleash Your Potential with Our Business Consultancy & Virtual Assistant Services" />
+      <Quote quote="Unleash your potential with our Key Account Management, Virtual Assistant and Business Services." />
       <AboutContent />
       <OurMission />
       {/* <Contact title='Contact Us' bgcolor='white' /> */}

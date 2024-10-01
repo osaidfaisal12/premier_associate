@@ -14,11 +14,11 @@ const Footer = () => {
           height={100}
           src="/webwh.png"
         />
-        <p className='text-white  md:text-left text-center font-poppins text-[16px] leading-[200%] max-w-[250px]'>© Copyright 2014 - 2023. PREMIER ASSOCIATES. All Rights Reserved.</p>      
+        <p className='text-white  md:text-left text-center font-poppins text-[16px] leading-[200%] max-w-[250px]'>© Copyright 2014 - 2025. Premier Associates. All Rights Reserved.</p>      
         </div>
 
         <div className='xl:text-[24px] md:self-stretch flex items-center justify-center text-[20px] xl:w-[318px] w-[240px] text-center font-secularOne text-white'>
-        Unleash your potential with our virtual assistant services
+        Unleash your potential with our Key Account Management, Virtual Assistant and Business Services.
         </div>
 
         <ul className='flex-col font-poppins md:flex hidden'>

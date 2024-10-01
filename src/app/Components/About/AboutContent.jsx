@@ -5,35 +5,14 @@ const AboutContent = () => {
     <div className="flex lg:py-[90px] py-[60px] lg:leading-[250%] lg:tracking-[0.5px] xl:pl-[243px] lg:pl-[180px] md:pl-[65px] pl-[35px] md:pr-0 pr-[30px]">
         <div className="xl:w-[832px] lg:w-[680px] md:w-[640px] ">
       <p className="font-poppins">
-        Premier Associates is a Virtual Assistant firm that provides Virtual
-        assistant services solutions to businesses across various industries in
-        the United Kingdom, UAE, Canada & Pakistan. Established in 2014, the
-        company has been serving clients for 8 years and has built a strong
-        reputation for excellence in Virtual Assistant & Business Consultancy
-        services.
+      Premier Associates, established in 2014, has been serving clients in the United Kingdom, USA, Canada, Pakistan, Saudi Arabia, Australia, Qatar, and the UAE. Our dedicated team is committed to fostering business growth and nurturing key client relationships. At Premier Associates, we specialize in providing comprehensive business development and key account management services tailored to meet the unique needs of our clients. We understand that sustained growth and profitability are contingent upon strategic partnerships and effective management of key accounts. 
         <br /><br />
-        Premier Associates offers a wide range of services, including Virtual
-        Assistant, Key Accounts Management, Business Development, Real estate
-        Management, Franchise Services, and managing the CRM Applications. The
-        company works with clients of all sizes, from small startups to large
-        multinational corporations. The company is committed to delivering
-        results-driven solutions that enable clients to achieve their goals and
-        drive sustainable growth.
+        Premier Associates offers a wide range of services, including Key Accounts Management, Business Development, Business operations, Partnerships, Managing the CRM Applications, Trading, Franchise services & Office Tasks and Administration. The company works with clients of all sizes, from small startups to large multinational corporations. 
         <br /><br />
-        In today&rsquo;s fast-paced business landscape, the demand for seamless
-        multitasking, quick response times, and efficient management has never
-        been higher. This is where we step in. At Premier Associates, we
-        understand the challenges you face and are dedicated to providing
-        tailored solutions that align with your unique requirements.
+        Our services are designed to enhance  customer relationships and increase client retention. We leverage market research, industry insights, and targeted outreach to identify potential clients and establish meaningful connections. They include a variety of tactics aimed at identifying and capitalizing on both existing and new business opportunities. We place high importance on supporting long-term relationships and giving each client's needs individual attention. Our company's services can provide significant value to clients who want to improve their sales and customer management capabilities while focusing on their core business activities.
+
         <br /><br />
-        Our company&rsquo;s services can provide significant value to clients who want
-        to improve their sales and customer management capabilities while
-        focusing on their core business activities. If you&rsquo;re looking for a
-        trusted Virtual assistant that can help your business navigate today&rsquo;s
-        complex and rapidly changing business environment, Premier Associates
-        may be the right choice for you.
-        <br /><br />
-      </p>
+              </p>
       <div>
         <p className="font-poppins font-semibold">
           By partnering with Premier Associates you can expect:
